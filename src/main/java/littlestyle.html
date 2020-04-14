@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+<body>
+<div id="xiaobian">
+    请输入标题：<input type="text" name="title" v-model="title" placeholder="麦当劳「5G」全球首发！免费体验！">
+
+    <p></p>
+    请输入标题的另一种说法：<input v-model="another" type="text" name="anotherWay"placeholder="麦当劳「5G」全球首发">
+    <p></p>
+
+
+    例子:<p></p>
+    <span v-model="title">{{title}}</span>是怎么回事呢？<br>
+    大家都知道，<span v-model="another">{{another}}</span>，那么这是怎么回事呢，<br>
+    今天小编就带大家来看看。<span v-model="another">{{another}}</span>，<br>
+    其实就是<span v-model="another">{{another}}</span>，大家可能会问为什么，<br>
+    但是事实就是这样，如果大家对<span v-model="another">{{another}}</span>有什么看法，<br>
+    欢迎在下方评论跟小编一起讨论喔
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var happy=new Vue(
+        {
+            el:'#xiaobian',
+            data:{
+                title:'',
+                another:''
+            }
+
+        }
+    )
+
+</script>
+
+</body>
+</html>
